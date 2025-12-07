@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Havenmade — Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/U7lUxE4PtJ3feA6VvVjSEIGbEGs.avif">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <!-- Font Awesome CDN -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
@@ -58,7 +59,7 @@
 
       <!-- LEFT SIDE -->
       <div class="hero-left blur-reveal">
-        <h1>Find your Haven<br>with Havenmade</h1>
+        <h1>Find your Home<br>with Havenmade</h1>
 
         <div class="hero-left-bottom">
           <p class="hero-subtitle">
@@ -107,7 +108,7 @@
     </div>
   </section>
 
-  <section class="about-section" id="about">
+  <section class="about-section" id="about" onclick="saveScroll()">
     <div class="container">
       <div class="about-left">
         <span class="about-tag blur-reveal">ABOUT US</span>
@@ -240,7 +241,7 @@
     </div>
   </section>
 
-  <section class="properties-section" id="properties">
+  <section class="properties-section" id="properties" onclick="saveScroll()">
     <div class="container">
       <div class="properties-sticky">
         <div class="properties-left blur-reveal">
@@ -254,7 +255,7 @@
 
       <div class="properties-scroll">
         <div class="properties-right">
-          <div class="properties-card">
+          <a  href="modern-family.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url(assets/florian-schmidinger-b_79nOqf95I-unsplash.jpg);"></div>
             <div class="properties-details">
               <p class="properties-name">Modern Family Home</p>
@@ -269,9 +270,9 @@
                 <span class="properties-price">600,000 <span>/month</span></span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="properties-card">
+          <a href="silverstone retreat.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url('assets/alejandra-cifre-gonzalez-ylyn5r4vxcA-unsplash.jpg');"></div>
             <div class="properties-details">
               <p class="properties-name">Silverstone Retreat</p>
@@ -286,9 +287,9 @@
                 <span class="properties-price">300,000,000</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="properties-card">
+          <a href="aurora house.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url('assets/salman-saqib-z6UAWpQAhXs-unsplash.jpg');"></div>
             <div class="properties-details">
               <p class="properties-name">The Aurora House</p>
@@ -303,9 +304,9 @@
                 <span class="properties-price">500,000,000</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="properties-card">
+          <a href="meridian.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url('assets/felix-P21wf6KAykw-unsplash.jpg');"></div>
             <div class="properties-details">
               <p class="properties-name">The Meridian Home</p>
@@ -320,9 +321,9 @@
                 <span class="properties-price">550,000 <span>/month</span></span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="properties-card">
+          <a href="blossom.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url('assets/frames-for-your-heart-mR1CIDduGLc-unsplash.jpg');"></div>
             <div class="properties-details">
               <p class="properties-name">Blossom View Home</p>
@@ -337,13 +338,13 @@
                 <span class="properties-price">150,000,000</span>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div class="properties-card">
+          <a href="blue-horizon.html" class="properties-card" onclick="saveScroll()">
             <div class="properties-image" style="background-image:url('assets/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg');"></div>
             <div class="properties-details">
-              <p class="properties-name">Modern Family Home</p>
-              <p class="properties-location">1234 Elm Street, Springfield</p>
+              <p class="properties-name">Blue Horizon</p>
+              <p class="properties-location">No. 1 Ocean Drive, Lekki</p>
               <div class="properties-detail">
                 <span><i class="fa-solid fa-bed"></i> 4 Bedrooms</span>
                 <span><i class="fa-solid fa-bath"></i> 2 Bathrooms</span>
@@ -354,7 +355,7 @@
                 <span class="properties-price">700,000 <span>/month</span></span>
               </div>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>
@@ -643,7 +644,7 @@
     </div>
   </section>
 
-  <section class="faq-section" id="faq">
+  <section class="faq-section" id="faq" onclick="saveScroll()">
     <div class="container">
       <div class="faq-sticky">
         <div class="faq-header blur-reveal">

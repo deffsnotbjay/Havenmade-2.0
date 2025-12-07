@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havenmade Property details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/U7lUxE4PtJ3feA6VvVjSEIGbEGs.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="property.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="assets/DN9lvgyKd2Vi54pni0wON7LHvs.avif" alt="Havenmade Logo">
+            Havenmade
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="#properties">Properties</a>
+            <a href="#faq">Faq</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a class="contact-btn slide-effect" href="#contact">
+            Contact Us
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <a href="#properties">Properties</a>
+        <a href="#faq">Faq</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <main class="property-page-dark">
+
+        
+
+        <section class="property-hero-dark">
+            <img src="assets/frames-for-your-heart-2d4lAQAlbDA-unsplash.jpg" alt="Main Property View" class="hero-image-dark">
+        </section>
+        
+        <section class="details-and-form-container-dark">
+            
+            <div class="property-info-column-dark">
+                
+                <div class="property-core-details-dark">
+                    <a href="index.html" class="back-link"><i class="fas fa-chevron-left"></i> Back to listings</a>
+                    <h1 class="property-address">Blue Horizon</h1>
+                    <p class="properties-location">No. 1 Ocean Drive, Lekki</p>
+                    <!-- <p class="listed-by">Listed by <span class="agency">Century 21 Real Estate LLC</span></p> -->
+                    
+                    <span class="properties-price">₦700,000 <span>/month</span></span>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <i class="fas fa-bed"></i> Bedrooms: <span>4</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fa-solid fa-ruler-combined"></i> Area: <span>2,800 sq.ft</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-bath"></i> Bathrooms: <span>2</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-building"></i> Type: <span>Villa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-tabs-dark">
+                    <div class="tab-buttons-dark">
+                        <button class="tab-button-dark active" onclick="openTab(event, 'Description')">Description</button>
+                        <button class="tab-button-dark" onclick="openTab(event, 'Amenities')">Amenities</button>
+                        <button class="tab-button-dark" onclick="openTab(event, 'Location')">Location</button>
+                    </div>
+
+                    <div id="Description" class="tab-content-dark active">
+                        <p>Comfortable 5-bedroom apartment with modern appliances, community pool, and a convenient location in Phoenix. The perfect place to call home for young professionals.</p>
+                    </div>
+
+                    <div id="Amenities" class="tab-content-dark">
+                        <div class="amenities-grid">
+                            <div class="amenity-item"><i class="fas fa-wifi"></i> High-Speed Internet</div>
+                            <div class="amenity-item"><i class="fas fa-swimming-pool"></i> Swimming Pool</div>
+                            <div class="amenity-item"><i class="fas fa-dumbbell"></i> Fitness Center</div>
+                            <div class="amenity-item"><i class="fa-solid fa-wine-glass"></i> Wine Cellar</div>
+                            <div class="amenity-item"><i class="fa-solid fa-bell"></i> Alarm system</div>
+                            <div class="amenity-item"><i class="fas fa-leaf"></i> Green Spaces</div>
+                        </div>
+                    </div>
+
+                    <div id="Location" class="tab-content-dark">
+                        <p>This property is centrally located with easy access to major highways, downtown Phoenix, and popular dining/entertainment hubs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-column-dark">
+                <div class="contact-card-dark">
+                    <p class="interest-prompt">Interested? <span class="letstalk">Let's talk!</span></p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Jane Smith" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="jane@framer.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Let us know your thoughts or questions." rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button-dark">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="share-section">
+                    <p>Share this listing</p>
+                    <div class="share-icons">
+                        <i class="fas fa-link"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo logo">
+                    <img src="assets/U7lUxE4PtJ3feA6VvVjSEIGbEGs.avif" alt="">
+                    <span>Havenmade</span>
+                    </div>
+                    <p>Making Luxury Living Effortless</p>
+                    <a href="#" class="footer-btn-explore">
+                    Explore Properties
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                    </a>
+                </div>
+
+                <div class="footer-subscribe">
+                    <p>Stay updated with the latest news, promotions, and exclusive offers.</p>
+                    <form class="subscribe-form">
+                    <input type="email" placeholder="jane@framer.com" required>
+                    <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-social-links">
+                <div class="footer-section-title">Social</div>
+                <div class="social-icons">
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+                </div>
+
+                <div class="footer-links">
+                <div class="link-column">
+                    <div class="footer-section-title">Pages</div>
+                    <ul>
+                        <li><a href="#">Home <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">About <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">Properties <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">Contact <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">404 <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                    </ul>
+                </div>
+                    
+                <div class="link-column">
+                    <div class="footer-section-title">Info</div>
+                    <ul>
+                        <li><a href="#">Blog <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">Privacy Policy <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">Terms & Conditions <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                        <li><a href="#">Disclaimer <span class="link-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                        </span></a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                &copy; All copyrights by Havenmade 2025
+                </div>
+                <div class="footer-attribution">
+                Designed by : deffnotbjay
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="space"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

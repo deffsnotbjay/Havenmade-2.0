@@ -37,7 +37,7 @@ img{
   filter: blur(8px);
   transform: translateY(20px);
   transition: opacity 0.8s ease-out, filter 0.8s ease-out, transform 0.8s ease-out;
-  transition-delay: var(--delay, 0s); 
+  transition-delay: 0s; 
 }
 .blur-reveal.is-visible {
   opacity: 1;
@@ -2621,7 +2621,8 @@ footer {
 
   .footer-links {
     gap: 30px;
-    align-items: center;
+    /* align-items: center; */
+    
   }
 
   .footer-social-links {
@@ -2690,7 +2691,7 @@ footer {
   .footer-links {
     width: 100%;
     margin-bottom: 20px;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .link-column ul li a {

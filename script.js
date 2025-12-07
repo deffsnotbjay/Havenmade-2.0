@@ -164,5 +164,68 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Function for handling the tabs (unchanged)
+function openTab(evt, tabName) {
+    var i, tabcontent, tabbuttons;
+
+    tabcontent = document.getElementsByClassName("tab-content-dark");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+    }
+
+    tabbuttons = document.getElementsByClassName("tab-button-dark");
+    for (i = 0; i < tabbuttons.length; i++) {
+        tabbuttons[i].classList.remove("active");
+    }
+
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+}
+
+// Function for handling the image gallery
+function changeMainImage(thumbnail) {
+    const mainImage = document.getElementById('mainGalleryImage');
+    mainImage.src = thumbnail.src; // Set main image src to thumbnail src
+
+    // Remove active class from all thumbnails
+    const thumbnails = document.querySelectorAll('.gallery-thumbnails img');
+    thumbnails.forEach(img => img.classList.remove('active-thumbnail'));
+
+    // Add active class to the clicked thumbnail
+    thumbnail.classList.add('active-thumbnail');
+}
+
+
+// Ensure the default tab is active and first thumbnail is active when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Activate the first tab
+    const firstTabButton = document.querySelector('.tab-button-dark');
+    if (firstTabButton) {
+        firstTabButton.click();
+    }
+
+    // Activate the first gallery thumbnail
+    const firstThumbnail = document.querySelector('.gallery-thumbnails img');
+    if (firstThumbnail) {
+        firstThumbnail.classList.add('active-thumbnail');
+        // Also ensure the main image displays the first thumbnail's content
+        document.getElementById('mainGalleryImage').src = firstThumbnail.src;
+    }
+});
+
+function saveScroll() {
+    // Save scroll position before navigating
+    sessionStorage.setItem('scrollPos', window.scrollY);
+}
+
+// Restore scroll when coming back
+window.addEventListener('load', () => {
+    const scrollPos = sessionStorage.getItem('scrollPos');
+    if(scrollPos) {
+        window.scrollTo(0, scrollPos);
+        sessionStorage.removeItem('scrollPos'); // optional
+    }
+});
+
 lucide.createIcons();
 
